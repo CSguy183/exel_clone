@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div class="menu_bar">
+        <div class="new_open_save_container">
+            <div class="icon_container">
+                <div class="new_file_icon">
+                    <i class="icon fas fa-file-alt"></i>
+                </div>
+                <div class="open_file_icon">
+                    <i class="icon far fa-folder-open"></i>
+                </div>
+                <div class="save_file_icon">
+                    <i class="icon far fa-save"></i>
+                </div>
+                <input type="file" name="" id="open_file" style="display: none;">
+            </div>
+        </div>
+
+        <div class="formatting_container">
+            <select name="" class="font_family_container">
+                <option value="Arial">Arial</option>
+                <option value="monospace">Monospace</option>
+                <option value="Times">Times new roman</option>
+                <option value="cursive">Cursive</option>
+                <option value="Impact">Impact</option>
+            </select>
+
+            <select class="font_size_container">
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="20">20</option>
+                <option value="24">24</option>
+            </select>
+            
+            <div class="biu_container">
+                <div class="bold_icon">
+                    <i class="biu fas fa-bold"></i>
+                </div>
+                <div class="italic_icon">
+                    <i class="biu fas fa-italic"></i>
+                </div>
+                <div class="underline_icon">
+                    <i class="biu fas fa-underline"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="alignment_container">
+            <div class="icon_container">
+                <div class="align_left_icon">
+                    <i class="align fas fa-align-left left"></i>
+                </div>
+                <div class="align_center_icon">
+                    <i class="align fas fa-align-center center"></i>
+                </div>
+                <div class="align_justify_icon">
+                    <i class="align fas fa-align-justify justify"></i>
+                </div>
+                <div class="align_right_icon">
+                    <i class="align fas fa-align-right right"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="color_container">
+            <div class="fill_drip_icon">
+                <i class="color fas fa-fill-drip"></i>
+            </div>
+            <input type="color" class = 'textColorPalette' style="display: none;">
+            <div class="tint_icon">
+                <i class="color fas fa-tint"></i>
+            </div>
+            <input type="color" class = 'bgColorPalette' style="display: none;" >
+        </div>
+
+    </div>
+    <div class="formula_bar">
+        <input type="text" class="address_input" readonly>
+        <img src="./images/Daco_1376889.png" alt="">
+        <input type="text" class="formula_input">
+    </div>
+    <div class="grid_container">
+        <div class="top_row">
+        </div>
+        <div class="left_col"></div>
+        <div class="grid">
+
+        </div>
+    </div>
+    <div class="sheet_container">
+        <div class="add-sheet_container">
+            <i class="fas addSheetIcon fa-plus icon"></i>
+        </div>
+        <div class="sheets-list">
+            <div class="sheet active-sheet" sheetIdx="0"> Sheet 1</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+    <!-- new open save  -->
+    <script src="nos.js"></script>
+    <script src="formula.js"></script>
+</body>
+
+</html>

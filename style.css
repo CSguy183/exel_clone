@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+    /* font-family: ; */
+}
+
+body{
+    margin: 0px;
+}
+
+.selected{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+/* ************menu bar styling********** */
+
+.menu_bar{
+    height: 3.5rem;
+    /* background-color: yellow; */
+    display: flex;
+}
+
+.new_open_save_container{
+    /* height: 80%; */
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.icon_container{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    border-right: 0.1px solid rgb(175, 174, 174);
+}
+
+.icon{
+    font-size: 1.5rem;
+    color: #858686;
+}
+
+.formatting_container{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.font_family_container{
+    
+    outline: none;
+    margin-left: 1rem;
+    flex : 2;
+    border: none;
+    /* border-left: 0.1px solid rgb(175, 174, 174); */
+    /* border-right: 0.1px solid rgb(175, 174, 174); */
+}
+
+
+.font_size_container{
+    outline: none;
+    /* margin-left: 1rem; */
+    flex : 1;
+    border: none;
+    border-left: 0.1px solid rgb(175, 174, 174);
+    border-right: 0.1px solid rgb(175, 174, 174);
+}
+
+.biu_container{
+    /* border: 1px solid red; */
+    /* width: 20%; */
+    flex:2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 0.1px solid rgb(175, 174, 174);
+}
+
+.biu{
+    font-weight: lighter;
+    color: #858686;
+}
+
+.alignment_container{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.alignment_container > .icon_container {
+    /* width: 20%; */
+    /* border: 1px solid red; */
+    height: 60%;
+    /* padding-top: 1rem; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 0.1px solid rgb(175, 174, 174);
+}
+
+.align{
+    font-weight: lighter;
+    color: #858686;
+}
+
+.color_container{
+    width: 10%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.color{
+    color: #858686;   
+}
+
+/* *************formula bar styling*********** */
+
+.formula_bar{
+    height: 2rem;
+    /* background-color: #f6e58d; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(216, 213, 213);
+    border-top: 0.1px solid rgb(216, 213, 213);
+}
+
+.formula_bar img{
+    height: 60%;
+    width: 1%;
+    margin-left: 1.2rem;
+    margin-right: .1rem;
+}
+
+.address_input{
+    width: 4rem;
+    /* border: none; */
+    /* border-right: 0.1px solid black; */
+    outline: none;
+    text-align: center;
+}
+
+.formula_input{
+    width: calc(100vw - 12rem);
+    outline: none;
+}
+
+/* ************ sheet styling ***********/
+.sheet_container{
+    height: 2rem;
+    background-color: cadetblue;
+    display: flex;
+}
+
+.add-sheet_container{
+    height: 100%;
+    min-width:30px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sheets-list{
+    display: flex;
+    height: 100%;
+    overflow-x: auto;
+}
+.sheets-list::-webkit-scrollbar{
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .sheets-list {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.sheet{
+    min-width:60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border:1px solid;
+}
+.active-sheet
+{
+    background-color: gainsboro;
+}
+
+
+/* *************grid styling********** */
+
+.grid_container{
+    height: calc(100vh - 3.5rem - 2rem - 2rem);
+    /* background-color: chartreuse; */
+    overflow: auto;
+}
+.top_row{
+    display: flex;
+    position: relative;
+    left: 4rem;
+}
+
+.top_row .cell{
+    /* font-weight: 1px; */
+    background-color: #ecf0f1;
+    border-right: none;
+    min-width: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_col{
+    width: 4rem;
+    text-align: center;
+    background-color: #ecf0f1;
+    border-bottom: none;
+    border-right: none;
+}
+
+.cell{
+    height: 2rem;
+    border: 0.1px solid rgb(223, 221, 221);
+}
+
+.row{
+    display: flex;
+}
+
+.grid .cell{
+    min-width: 5rem;
+    outline:none;
+    border-right: none;
+    border-top: none;
+}
+
+.grid_container{
+    position: relative;
+}
+
+.grid{
+    position: absolute;
+    top: 2rem;
+    left : 4rem;
+}
