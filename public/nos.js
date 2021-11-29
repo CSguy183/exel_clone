@@ -44,21 +44,25 @@ function setSheets(){
     for(let child of sheetsList.childNodes){
         sheetsList.removeChild(child);
     }
-    
-    for(let i=0; i<sheetsDB.length-1; i++){
+    sheetsList.innerHTML = "";
+    for(let i=0; i<sheetsDB.length; i++){
         openSheet();
     }
 }
 
 let newFileIcon = document.querySelector('.new_file_icon');
 newFileIcon.addEventListener('click', ()=>{
-    // db reset
+    // db reset\
+    
     sheetsDB = [];
     // db = [];
     initDB();
 
+    db = sheetsDB[0];
+
     // map ui to match new changes
     setinitUI();
+    setSheets();
 
 });
 
